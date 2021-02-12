@@ -1,0 +1,60 @@
+$gray-1: #eeeeee;
+$white: #FFFFFF;
+
+.theme--light {
+  .odd-even, .v-menu__content {
+    &,  & > .v-expansion-panel-content__wrap {
+      & > [role*="list"]:nth-child(even),
+      tr:nth-child(even),
+      & > div[class^="v-list"]:nth-child(even),
+      .v-data-table__mobile-table-row:nth-child(even) td{
+        background-color: $gray-1;
+      }
+
+      & > [role*="list"]:nth-child(odd),
+      tr:nth-child(odd),
+      & > div[class^="v-list"]:nth-child(odd),
+      .v-data-table__mobile-table-row:nth-child(odd) td{
+        background-color: $white;
+      }
+    }
+
+    [role*="option"]:nth-child(even){
+      background-color: $white;
+    }
+
+    [role*="option"]:nth-child(odd) {
+      background-color: $gray-1;
+    }
+
+    td:not(:last-child),th:not(:last-child) {
+      border-left: 1px solid #ccc !important;
+    }
+  }
+}
+
+.button-group-border {
+  & > .v-btn, .h-inherit {
+    border-left: 1px solid; //$border-1;
+  }
+  & > .v-btn:first-child, .h-inherit:first-child {
+    border-right: 1px solid //$border-1;
+  }
+}
+
+thead.v-data-table-header {
+  tr {
+    background-color: #e0e0e0 !important;
+  }
+}
+
+.text-decoration-line-through{
+  text-decoration: line-through;
+}
+
+.full-width {
+  width: 100%;
+}
+.full-width-i {
+  width: 100% !important;
+}

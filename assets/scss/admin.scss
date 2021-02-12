@@ -1,0 +1,163 @@
+//// admin style in cpanel
+
+#__layout{
+  position: relative;
+
+  &:before{
+    background-repeat: no-repeat;
+    background-position: bottom;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+  }
+}
+
+.bg-default-branch-image {
+  background-image: url("../images/bg-default-branch-image.jpg");
+}
+
+.home-index{
+  width: 100%;
+  height: 1000px;
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+.v-date-picker-table {
+  .theme--light.v-btn {
+    color: rgba(0,0,0,.87) !important;
+  }
+  .v-btn--active .theme--light .v-btn  {
+    color: #3bb001 !important;
+  }
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.h-inherit{
+  height: inherit;
+}
+
+.transfer-notification-dialog {
+  .stamp {
+    position: absolute;
+    left: 7px;
+    top: 22px;
+    padding: 2px 2px 2px 2px;
+    transform: rotate(-10deg);
+    text-align: center;
+    color: #555;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border: 0.25rem solid #555;
+    display: inline-block;
+    border-radius: 1rem;
+    -webkit-mask-image: url('../images/bg-stample.png');
+    -webkit-mask-size: 944px 604px;
+    mix-blend-mode: multiply;
+    z-index: 4;
+
+    h5, p, span {
+      display: block;
+      margin-bottom: 5px !important;
+    }
+    p, span {
+      display: block;
+      font-size: 1rem;
+      margin-bottom: 0 !important;
+    }
+  }
+
+  .is-approved {
+    -webkit-mask-position: 13rem 6rem;
+    border-radius: 0;
+  }
+}
+
+.danger * {
+  color: white;
+}
+
+.v-btn:focus {
+}
+
+.font-ltr-hint .v-messages {
+    text-align: left !important;
+    color: var(--v-danger-base) !important;
+}
+
+.v-navigation-drawer {
+  background: url('../images/default-sidebar.jpg')  no-repeat left center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  &__content{
+    background-color: #171717e8;
+  }
+}
+
+.theme--dark.v-sheet {
+  background-color: unset !important;
+}
+
+.sidebar-bottom-logo{
+  background-image: url("../images/logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 150px;
+  width: 100%;
+  height: 250px;
+  margin: 20px auto;
+}
+
+textarea {
+  width: 100%;
+}
+
+//
+//.color-primary, .color-primary input {
+//    color: rgb(27, 138, 21) !important;
+//}
+//
+
+//
+//.v-label{
+//    font-size: 14px !important;
+//}
+//
+//.v-input, .v-list__tile{
+//    font-size: 14px !important;
+//}
+//
+//
+//#__layout{
+//  position: relative;
+//
+//  &:before{
+//    background-image: url("../images/sidebarImage.png");
+//    background-repeat: no-repeat;
+//    background-position: center;
+//    content: '';
+//    position: absolute;
+//    width: 80%;
+//    height: 100%;
+//    opacity: 1;
+//  }
+//}
+//
+//a{
+//  text-decoration: none;
+//}
